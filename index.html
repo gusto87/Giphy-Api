@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<div id="list">
+
+</div>
+<body>
+    <script>
+    var topics = ['r8', 'nsx', 'gt-r', 'sweetwater-420', 'ar-15', 'white-zombie', 'kimber-1911', 'mclaren-p1', 'AA-12'  ];
+    
+  function newButtons(){
+      for (var i = 0; i <topics.length; i++){
+      document.getElementById("list").innerHTML += "<button>" + topics[i] + "</button>";
+   }
+  }
+
+  newButtons();
+    
+    
+    </script>
+    
+</body>
+</html>
