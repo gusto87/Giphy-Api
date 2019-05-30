@@ -4,27 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gif List</title>
     <link href="style.css" rel="stylesheet">
-
+    
 </head>
-<div id="list">
 
-</div>
 <body>
-    <script>
-    var topics = ['r8', 'nsx', 'gt-r', 'sweetwater-420', 'ar-15', 'white-zombie', 'kimber-1911', 'mclaren-p1', 'AA-12'  ];
-    
-  function newButtons(){
-      for (var i = 0; i <topics.length; i++){
-      document.getElementById("list").innerHTML += "<button>" + topics[i] + "</button>";
-   }
-  }
+    <div id="popup-gifs" class="D-flex flex row"></div>
+     
+        <div class="container">
+                <h1>My Favorites</h1>
 
-  newButtons();
+                <div id="buttons-view"></div>
+
+                <form id="topic-form">
+                  <label for="topic-input">Add ya favorite topic!</label>
+                  <input type="text" id="topic-input"><br>
+            
+                  <!-- Button triggers new movie to be added -->
+                  <input id="add-topic" type="submit" value="Add a topic, Mane!">
+                </form>
+            
+                <!-- Created Buttons will get Dumped Here  -->
+                <div id="buttons-view"></div>
+            
+                <form id="topics-form">
+                                      
+                
+                  
+            
+
+                 
+                </form>
+            
+                <!-- topics  will Get Dumped Here -->
+                <div id="topics-view"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script type="text/javascript">
     
-    
-    </script>
+
+
+</script>
+</div>
+</body>
     
 </body>
 </html>
